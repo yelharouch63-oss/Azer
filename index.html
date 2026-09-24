@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi my bestie Siham 😍</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', cursive, sans-serif;
+    }
+    body {
+      background-color: #fcf8e3;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+    .title {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 24px;
+      color: #444;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .cute-gif {
+      width: 220px;
+      height: 220px;
+      object-fit: contain;
+      margin-bottom: 25px;
+      border-radius: 20px;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      position: relative;
+      min-height: 80px;
+    }
+    .btn {
+      padding: 12px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s, background-color 0.2s;
+      white-space: nowrap;
+    }
+    .btn-yes {
+      background-color: #ffb3c1;
+    }
+    .btn-yes:hover {
+      transform: scale(1.1);
+      background-color: #ff94a8;
+    }
+    .btn-no {
+      background-color: #ffb3c1;
+      position: relative;
+    }
+    .message-card {
+      display: none;
+      background: #ffffff;
+      padding: 30px 25px;
+      border-radius: 30px;
+      border: 4px dashed #ffb3c1;
+      box-shadow: 0 10px 25px rgba(255, 179, 193, 0.3);
+      text-align: right;
+      line-height: 1.9;
+      font-size: 17px;
+      color: #4a4a4a;
+      position: relative;
+      animation: popup 0.8s ease-in-out;
+    }
+    .message-card::before {
+      content: "💖";
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      font-size: 30px;
+    }
+    .message-card::after {
+      content: "🌸";
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      font-size: 30px;
+    }
+    @keyframes popup {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- مشغل الموسيقى -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <div id="quiz-box">
+      <div class="title">hi my bestie siham 🤏😍</div>
+      <div class="subtitle">كتبغيني🫶🥹🤭!</div>
+      
+      <!-- الصورة الأولى: قطة تقبل الشاشة -->
+      <img id="catImg" src="https://media.tenor.com/71239c054366e6c1e345bbf7df5d40db/tenor.gif" class="cute-gif" alt="Cute GIF">
+      
+      <div class="btn-container">
+        <button class="btn btn-yes" onclick="showLoveLetter()">Yes</button>
+        <button class="btn btn-no" id="noBtn" onmouseover="handleNoAction()" onclick="handleNoAction()">No</button>
+      </div>
+    </div>
+
+    <div id="message-card" class="message-card">
+إلى أرق وأغلى إنسانة في هذا الوجود 👑💖
+هل تعلمين في كثير من الأحيان أرجع بذاكرتي إلى ذلك اليوم الأول الذي رأيتك فيه من الأعلى 🕊️ ذلك اليوم الذي ظننت فيه أنني مجرد شخص يلمح فتاة جميلة 🌸 ولم أكن أعلم أنني في تلك اللحظة كنت أنظر إلى مستقبلي وإلى الشخص الذي سيقلب حياتي رأسا على عقب ✨
+
+طوال حياتي كنت أشعر بتنافر غريب مع هذا العالم وكأنني في كفة والناس جميعا في كفة أخرى إلى أن تقاطعت طرقنا 💫 في تلك اللحظة بالذات ولأول مرة في حياتي شعرت بجاذبية عجيبة 🧲 وبسكينة وراحة نادرة أثبتت لي أنك لست مجرد عابرة في حياتي بل أنت الجزء الذي كان ناقصا في روحي 🧩
+
+معك أنت فقط تعلمت كيف يستمتع الإنسان حتى في لحظات الخسارة ♟️ حين كنا نلعب الشطرنج وتغلبينني كانت الابتسامة ترتسم في قلبي قبل وجهي 🥹 لأن الخسارة أمامك هي أعظم فوز لي ولأن الرابح الحقيقي هو أنا الذي حظيت بفرصة الدخول إلى عالمك 🗝️
+
+أنت لست جميلة فحسب أنت ملاك حقيقي في صورة إنسانة 👼🏼 بتلك الطيبة التي تغمر قلبك 🤍 وبذلك الخجل العذب الذي يحمر له وجنتاك 🙈 وتلك العينين الواسعتين الهادئتين كعيون الغزال 🦌 اللتين أسرح فيهما وأنسى معهما الوجود أنت النقاء الذي كنت أبحث عنه في هذا العالم 💎
+
+أريدك أن تعلمي أن كل موقف صمدت فيه لأجلك 🛡️ وكل كلمة قيلت بيننا وكل ضحكة تشاركناها قد حفرت في قلبي إلى الأبد أنت لست خيارا في حياتي بل أنت الأولوية الأولى والأخيرة 🥇 وأنت الإنسانة التي أنا مستعد لأجلها أن أقف بوجه العالم وأحميك من أدنى حزن أو كذب قد يمس قلبك 🤲🏻
+
+وحين شاركتني رؤيتك المليئة بالثقة والأمل أدركت أن لحياتي معنى حقيقيا بوجودك 🌈 أعدك أن أكون لك السند والأمان وأن أبني لك المستقبل الجميل الذي تستحقينه 🏛️ وسأظل أفعل كل ما في وسعي لتبقى تلك الابتسامة المشرقة مرسومة على وجهك 😊
+
+شكرا لأنك في حياتي وشكرا لأنك أخذت بيدي وعلمتني كيف أحب بصدق 🫂 أحبك جدا أكثر بكثير مما تستطيع أية كلمات أن تصف ❤️✨
+    </div>
+  </div>
+
+  <script>
+    // تشكيلة تنوع بين شخصيات كرتونية حزينة وقطط كيوت حزينة
+    const sadGifs = [
+      "https://media.tenor.com/J3yO4O2d2mEAAAAC/cat-crying.gif",             // 1. قطة تبكي
+      "https://media.tenor.com/eb9lG4Ue0x8AAAAC/stitch-sad.gif",             // 2. كرتون Stitch حزين
+      "https://media.tenor.com/X4sY_338KcoAAAAC/cat-sad.gif",                // 3. قطة حزينة جداً
+      "https://media.tenor.com/K81W9SgR1f4AAAAC/spongebob-crying.gif",        // 4. كرتون سبونجبوب يبكي
+      "https://media.tenor.com/gK9u5sT2GlsAAAAC/crying-cat-cat-crying.gif",   // 5. قطة تبكي بشدة
+      "https://media.tenor.com/3Z7wB6d1P8AAAAAC/bear-sad.gif"                // 6. دب كرتوني كيوت وحزين
+    ];
+
+    const noTexts = [
+      "Are you sure? 🥺",
+      "Think again! 💔",
+      "Don't break my heart! 😭",
+      "Really? 😿",
+      "Give it a chance! 🎀",
+      "Please say Yes... 🥺❤️"
+    ];
+
+    let count = 0;
+    const music = document.getElementById('bgMusic');
+
+    function handleNoAction() {
+      const btn = document.getElementById('noBtn');
+      const catImg = document.getElementById('catImg');
+      const container = document.querySelector('.container');
+
+      // تحريك زر No
+      const containerRect = container.getBoundingClientRect();
+      const btnRect = btn.getBoundingClientRect();
+      const newX = (Math.random() - 0.5) * (containerRect.width - btnRect.width);
+      const newY = (Math.random() - 0.5) * 160;
+      btn.style.transform = `translate(${newX}px, ${newY}px)`;
+
+      // تغيير الصور والعبارات بالتناوب بين الكرتون والقطط
+      catImg.src = sadGifs[count % sadGifs.length];
+      btn.innerText = noTexts[count % noTexts.length];
+      
+      count++;
+    }
+
+    function showLoveLetter() {
+      document.getElementById('quiz-box').style.display = 'none';
+      document.getElementById('message-card').style.display = 'block';
+      
+      // تشغيل الموسيقى فوراً
+      music.currentTime = 0;
+      music.play().catch(function(err) {
+        console.log("Audio play error:", err);
+      });
+    }
+  </script>
+
+</body>
+</html>
